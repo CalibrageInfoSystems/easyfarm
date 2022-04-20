@@ -1,0 +1,233 @@
+<resources>
+
+    <string name="facebook_app_id">295177198235381</string>
+    <string name="fb_login_protocol_scheme">fb295177198235381</string>
+
+    <string name="app_name">EF Mithra</string>
+    <string name="F_name">First Name <font color="#ff0000"><bold> * </bold></font> </string>
+    <string name="M_name">Middle Name</string>
+    <string name="L_name">Last Name <font color="#ff0000"><bold> * </bold></font> </string>
+    <string name="birth_date">Date of Birth <font color="#ff0000"><bold> * </bold></font> </string>
+    <string name="signup">SignUp</string>
+    <string name="email">Email</string>
+    <string name="password">Password<font color="#ff0000"><bold> * </bold></font> </string>
+    <string name="confirm_pass">Confirm Password<font color="#ff0000"><bold> * </bold></font> </string>
+    <string name="user_name">User Name <font color="#ff0000"><bold> * </bold></font> </string>
+
+    <string name="mobile">Mobile Number<font color="#ff0000"><bold> * </bold></font> </string>
+    <string name="Internet">Please Check Internet Connection</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="err_please_enter_username">Please Enter User Name</string>
+    <string name="err_please_F_name">Please Enter First Name</string>
+    <string name="err_please_L_name">Please Enter Last Name</string>
+    <string name="err_please_date">Please Enter Date of Birth</string>
+    <string name="err_please_email">Please Enter Email</string>
+    <string name="err_please_password">Please Enter Password</string>
+    <string name="err_please_confirm_password">Please Enter Confirm Password</string>
+
+    <string name="err_please_valid_email">Please Enter Valid Email Address</string>
+    <string name="err_please_phone">Please Enter Mobile Number</string>
+    <string name="err_please_match_password"><![CDATA[Password  & Confirm Password Not matching]]></string>
+    <string name="Registation"> Mithra Registation</string>
+    <string name="Registati">  Registation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Alt_mobile">Alternative Mobile Number</string>
+    <string name="full_name">Father/Guardian Name<font color="#ff0000"><bold> * </bold></font> </string>
+    <string name="address">Address1<font color="#ff0000"><bold> * </bold></font> </string>
+    <string name="address2">Address2 </string>
+    <string name="village">Village Name <font color="#a6a6a6"><bold> * </bold></font></string>
+    <string name="villagee">Village Name </string>
+    <string name="mandal">Mandal / Taluq Name <font color="#a6a6a6"><bold> * </bold></font></string>
+    <string name="mandall">Mandal / Taluq Name </string>
+    <string name="pincode">Pin code</string>
+    <string name="district">District Name</string>
+    <string name="state">State <font color="#a6a6a6"><bold> * </bold></font></string>
+    <string name="statee">State Name</string>
+    <string name="err_please_Full_name">Please Enter Full Name</string>
+    <string name="err_please_address">Please Enter Address1</string>
+    <string name="err_please_village">Please Enter Village</string>
+    <string name="err_please_mandal">Please Enter Madal</string>
+    <string name="err_please_pin">Please Enter PinCode</string>
+    <string name="err_please_district">Please Enter  District</string>
+    <string name="err_please_state">Please Enter State</string>
+    <string name="facebook_id">Facebook Id</string>
+    <string name="Instagram_id">Instagram Id</string>
+    <string name="personal_info">Personal Details</string>
+    <string name="personal_infoo">Personal Information</string>
+    <string name="mitra_details">EF Mithra Details</string>
+    <string name="step1">Step 1</string>
+    <string name="total_steps">(of Step3)</string>
+    <string name="step2">Step 2</string>
+    <string name="step3">Step 3</string>
+    <string name="register">Register</string>
+    <string name="fill_details">Farmer Details</string>
+    <string name="welcome">Welcome</string>
+    <string name="thankyou">Thankyou</string>
+    <string name="err_message">Please Enter All Mandatory fields</string>
+    <string name="government">Government IDs</string>
+    <string name="adhar">Aadhar Card</string>
+    <string name="education">Educational</string>
+    <string name="experience">Experience</string>
+    <string name="cancel">Cancel</string>
+    <string name="currentDir">Current Directory</string>
+    <string name="folder">Folder</string>
+    <string name="fileSize">FileSize</string>
+    <string name="parentDirectory">Parent Directory</string>
+    <string name="local_proof">Local proof</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="Account_name">Account Holder Name*</string>
+    <string name="Account_Number">Account Number*</string>
+    <string name="Bank_Name">Bank Name*</string>
+    <string name="Branch">Branch Name*</string>
+    <string name="IFSC_Code">IFSC Code*</string>
+    <string name="land_details">Land Details</string>
+    <string name="Total_Area">Total Area(Acre)*</string>
+    <string name="Adopted_Area">Adopted Area(Acre)*</string>
+    <string name="Adopted_Areaa">Adopted Area</string>
+    <string name="Total_Areaa">Total Area </string>
+    <string name="Gps_Areaa">GPS Area</string>
+    <string name="Palm_Area">Palm Area(Acre)*</string>
+    <string name="Gps_Area">GPS Area(Acre) *</string>
+    <string name="pass_book">Passbook image*</string>
+    <string name="plot_ownership">Plot Ownership</string>
+    <string name="addresss">Address1 </string>
+    <string name="addresss2">Address2 </string>
+    <string name="ownermobile">Owner Contact Number </string>
+    <string name="owner_name">Owner Name</string>
+    <string name="surveynumber">Survey Number *</string>
+    <string name="surveynumberr">Survey Number </string>
+    <string name="adangalnumber">Adangal/ROR Unique Number*</string>
+    <string name="ROR_number">ROR (record on revenue)/khata Unique Number</string>
+    <string name="passbook_number">Passbook/Katha Number*</string>
+    <string name="Add_farmer">Add Farmer</string>
+
+    <string name="pan_number">Pan Card Number</string>
+    <string name="please_make_sure_you_are_standing_in_the_middle_of_the_plot_once_you_are_please_press_the_create_geotag_button">Please make sure you are standing in the middle of the plot. Once you are, please press the Create Geotag button.</string>
+    <string name="create_geo_tag">Create Geotag</string>
+    <string name="longitude">Longitude </string>
+    <string name="lattitude">Lattitude </string>
+    <string name="address_tag">Address </string>
+    <string name="fertilizerApplication">Fertilizer Details</string>
+    <string name="retake_geotag">Re Take</string>
+    <string name="gps_boundaries_of_the_plot">GPS Boundaries of the Plot</string>
+    <string name="plot_area_as_per_gps">Plot Area as per GPS</string>
+    <string name="plot_difference">Plot difference</string>
+    <string name="start">Start</string>
+    <string name="GPS_Points">GPS Points</string>
+    <string name="Distance">Distance</string>
+    <string name="Geo_Points_Lat_long">GEO Points Lattitudes and longitudes for each point</string>
+    <string name="ready">Ready</string>
+    <string name="reset">Reset</string>
+    <string name="running">Running</string>
+    <string name="save">SAVE</string>
+
+    <string name="stop">Stop</string>
+    <string name="Reset">Reset</string>
+    <string name="Record">Record</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="you_want_to_perform_transactions_sync">Do you want to perform transactions sync ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="farmer_register">Farmer Registration</string>
+
+    <string name="select_gender">Please Select Gender</string>
+    <string name="select_state">Please Select State</string>
+    <string name="select_district">Please Select District</string>
+    <string name="select_mandal">Please Select Mandal</string>
+    <string name="select_village">Please Select Village</string>
+
+    <string name="err_please_Totalarea">Please Enter Total Area</string>
+    <string name="select_role">Please Select Role</string>
+    <string name="id_proofs">ID Proof Image <font color="#a6a6a6"><bold> * </bold></font></string>
+    <string name="id_proofss">ID Proofs<font color="#a6a6a6"><bold> * </bold></font></string>
+    <string name="adhar_number">Aadhar</string>
+    <string name="pancard_number">Pan Card</string>
+    <string name="drive_number">Driving license</string>
+    <string name="Id_number">Id Proof Number*</string>
+    <string name="upload">Save</string>
+    <string name="gender">Gender <font color="#a6a6a6"><bold> * </bold></font></string>
+    <string name="genderr">Gender </string>
+    <string name="dist">District <font color="#a6a6a6"><bold> * </bold></font></string>
+    <string name="distt">District</string>
+    <string name="country">Country <font color="#a6a6a6"><bold> * </bold></font></string>
+    <string name="category">Category<font color="#a6a6a6"><bold> * </bold></font></string>
+    <string name="educationdegree">Education Degree Type</string>
+    <string name="Bank">Select Bank<font color="#a6a6a6"><bold> * </bold></font></string>
+    <string name="Banch">Select Branch<font color="#a6a6a6"><bold> * </bold></font></string>
+    <string name="ownership">Plot  OwnerShip<font color="#a6a6a6"><bold> * </bold></font></string>
+    <string name="home">Home</string>
+    <string name="farmerlist">Prospective\nFarmers</string>
+    <string name="vendor">Converted \nFarmers</string>
+    <string name="efFarmers">Easy Farm \nFarmers</string>
+    <string name="buyers">Buyers</string>
+    <string name="prosbuyers">Prospective\nBuyers</string>
+    <string name="prosvendors">Prospective\nVendors</string>
+    <string name="convvendors">Converted \nVendors</string>
+    <string name="convbuyers">Converted \nBuyers</string>
+    <string name="choose_rester">Registration Type</string>
+    <string name="newfarmer_str">New Farmer</string>
+    <string name="newplot">New Plot</string>
+    <string name="create_account">Create Account</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="address_details">Address Details</string>
+    <string name="role">Role <font color="#a6a6a6"><bold> * </bold></font></string>
+    <string name="error_confirm"><![CDATA[Password & Confirm Password not Matching]]></string>
+    <string name="reg">Registration</string>
+    <string name="plot_code">Code</string>
+
+    <string name="status">Status</string>
+    <string name="total_Area">Total Area</string>
+    <string name="Farmercode">Farmer Code<font color="#a6a6a6"><bold> * </bold></font></string>
+    <string name="revers">Reverse  Sync</string>
+    <string name="trans">Transaction Sync</string>
+    <string name="logistic">Vendor</string>
+    <string name="farmer_list">Farmers List</string>
+    <string name="notification">Notifications</string>
+    <string name="server_error">Some Error occurs</string>
+    <string name="Adpoterror">Adopted Area should be less than or equal to Total Area</string>
+    <string name="plot_address">Plot Address</string>
+    <string name="irrigaton">Irrigation Type</string>
+    <string name="soil_type">Soil Type</string>
+    <string name="power">Power Availability</string>
+    <string name="meter">Meter Number</string>
+    <string name="new_user">New User</string>
+    <string name="exist_user">Existing User</string>
+    <string name="exist_user_reg">Existing User Registration</string>
+    <string name="exist_role">Existing Role(S)</string>
+    <string name="new_role">Add New Role *</string>
+
+    <string name="farmer_name">Farmer Name</string>
+    <string name="fa_hu_name">Father/Husband Name</string>
+    <string name="res_address">Residential Address</string>
+    <string name="mobilee">Mobile Number </string>
+    <string name="date_birth">Date Of Birth</string>
+    <string name="isnri">IsNRI</string>
+    <string name="CountryName">Country Name</string>
+    <string name="zipcode">Zip Code</string>
+    <string name="farmers">Farmers</string>
+    <string name="comments">Comments</string>
+    <string name="select_imagee">Please Attach At Least One Image or Voice Record.</string>
+    <string name="image">Image Upload</string>
+    <string name="record">Voice Recording</string>
+    <string name="submit_req">Submit Request</string>
+    <string name="valid_issue_type">Please Select Complaint Type</string>
+    <string name="visit_success">Complaint Registered Successfully</string>
+    <string name="summary">Summary</string>
+    <string name="select_image">Please Attach At Least One Image or Voice Record</string>
+    <string name="requestCodeLabel">Complaint Code</string>
+    <string name="complete_details">View Complete Details</string>
+    <string name="comp_date">Complaint Date</string>
+    <string name="no_req_found">No Complaints Found</string>
+    <string name="cancel_success">Complaint Closed Successfully</string>
+    <string name="no_soil">No Soiltest Details Available</string>
+    <string name="registered_emailid">Please enter your Registered Email Id  or User name below:</string>
+    <string name="submit">Submit</string>
+    <string name="emailorusername">Email or Username</string>
+    <string name="select_plot">Select Plot<font color="#ff0000"><bold> * </bold></font> </string>
+    <string name="issue_type">ComplaintType</string>
+    <string name="Complients">Complaints</string>
+    <string name="close">Close</string>
+</resources>

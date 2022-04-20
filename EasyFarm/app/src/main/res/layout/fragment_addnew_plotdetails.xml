@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.cis.easyfarm.ui.addnewfarmer_basicdetails">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.6"
+                android:background="@drawable/white_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"
+                    android:src="@drawable/easyfarmlogo" />
+
+                <ImageView
+                    android:fontFamily="@font/rubik_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/easy_farm_logo"
+                    android:textAlignment="center"
+
+                    android:textSize="25dp" />
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/plot_details"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical"
+
+                        android:layout_marginBottom="5dp">
+
+
+
+                        <TextView
+                            style="@style/Common_textView_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginRight="@dimen/margin_5"
+                            android:layout_toRightOf="@+id/back"
+                            android:fontFamily="@font/rubik_regular"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:text="@string/land_details"
+                            android:textColor="@color/flot_clr"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Total_Area_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Total_Area"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:paddingLeft="5dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                        >
+
+
+                        <EditText
+                            android:id="@+id/Total_Area_edittxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_regular"
+                            android:inputType="numberDecimal"
+                            android:text=""
+                            android:maxLength="10"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/text_size_16" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/addresss_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/address"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:paddingLeft="5dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                        >
+
+
+                        <EditText
+                            android:id="@+id/addresss_plot_edittxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_regular"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:maxLength="30"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/text_size_16" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/address_label2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/address2"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:paddingLeft="5dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                        >
+
+
+                        <EditText
+                            android:id="@+id/addres_plot_edittxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_regular"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:maxLength="30"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/text_size_16" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/spinner_bgg"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/_3sdp"
+                            android:layout_weight="8"
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+
+                            tools:ignore="UselessParent">
+
+                            <Spinner
+                                android:id="@+id/spin_plot_state"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:layout_weight="0.9"
+                                android:background="@null"
+                                android:minHeight="0dp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:padding="8dp"
+                                android:layout_weight="0.1"
+                                android:src="@drawable/arrow_down" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_9sdp"
+                            android:layout_marginTop="-2dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/rubik_regular"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:paddingRight="@dimen/_3sdp"
+                            android:text="@string/state"
+                            android:textColor="@color/gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/spinner_bgg"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/_3sdp"
+                            android:layout_weight="8"
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+
+                            tools:ignore="UselessParent">
+                            <Spinner
+                                android:id="@+id/spin_plot_dist"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:layout_weight="0.9"
+                                android:background="@null"
+                                android:entries="@array/items_class"
+                                android:minHeight="0dp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_weight="0.1"
+                                android:padding="8dp"
+                                android:src="@drawable/arrow_down" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_9sdp"
+                            android:layout_marginTop="-2dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/rubik_regular"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:paddingRight="@dimen/_3sdp"
+                            android:text="@string/dist"
+                            android:textColor="@color/gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/spinner_bgg"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/_3sdp"
+                            android:layout_weight="8"
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+
+                            tools:ignore="UselessParent">
+                            <Spinner
+                                android:id="@+id/spin_plot_mandal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:layout_weight="0.9"
+                                android:background="@null"
+                                android:entries="@array/items_Mandal"
+                                android:minHeight="0dp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="0.1"
+                                android:layout_alignParentBottom="true"
+                                android:padding="8dp"
+                                android:src="@drawable/arrow_down" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_9sdp"
+                            android:layout_marginTop="-2dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/rubik_regular"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:paddingRight="@dimen/_3sdp"
+                            android:text="@string/mandal"
+                            android:textColor="@color/gray" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/spinner_bgg"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/_3sdp"
+                            android:layout_weight="8"
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+
+                            tools:ignore="UselessParent">
+                            <Spinner
+                                android:id="@+id/spin_plot_village"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:entries="@array/items_Village"
+                                android:layout_weight="0.9"
+                                android:background="@null"
+                                android:minHeight="0dp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.1"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:padding="8dp"
+                                android:src="@drawable/arrow_down" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_9sdp"
+                            android:layout_marginTop="-2dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/rubik_regular"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:paddingRight="@dimen/_3sdp"
+                            android:text="@string/village"
+                            android:textColor="@color/gray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_margin="5dp"
+
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/signup"
+                style="@style/Common_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            android:layout_alignParentLeft="true"
+            android:id="@+id/backBT"
+            style="@style/Common_Button"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="12dp"
+            app:fabCustomSize="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:src="@drawable/left_arrow"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/flot_clr"
+            android:src="@drawable/ic_right_arrow"
+            app:fabCustomSize="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!--        <Button-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:id="@+id/nextBT"-->
+        <!--            style="@style/Common_Button"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:minWidth="50dp"-->
+        <!--            android:text="next"-->
+        <!--            android:textColor="@color/white" />-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <ImageView android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@drawable/easyfarmlogo"
+            android:id="@+id/icon" android:padding="5dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/title"
+            android:fontFamily="@font/hind_semibold"
+            android:textColor="#000"
+            android:text="Title"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/message"
+            android:fontFamily="@font/hind_regular"
+            android:text="Messae"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

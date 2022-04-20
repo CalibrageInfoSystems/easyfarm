@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "926767123637",
+    "firebase_url": "https://easy-farm-8ba17.firebaseio.com",
+    "project_id": "easy-farm-8ba17",
+    "storage_bucket": "easy-farm-8ba17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926767123637:android:1b4c58e7e22b6fb05ac2fc",
+        "android_client_info": {
+          "package_name": "com.cis.easyfarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926767123637-d1i28ure7ivpnfl4og04q62ugtfqtono.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVxIUinJOJoCyOLIVcukKc1_xMOf_ViXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926767123637-d1i28ure7ivpnfl4og04q62ugtfqtono.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

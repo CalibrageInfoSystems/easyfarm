@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="70dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.7">
+        <ScrollView
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.6"
+                android:background="@drawable/white_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"
+                    android:src="@drawable/easyfarmlogo" />
+
+                <ImageView
+                    android:fontFamily="@font/hind_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:visibility="gone"
+                    android:src="@drawable/easy_farm_logo"
+                    android:textAlignment="center"
+
+                    android:textSize="25dp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/user_name"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:paddingLeft="5dp"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                    >
+
+                    <EditText
+                        android:id="@+id/name_edittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/text_size_16" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/firstname_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/F_name"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:paddingLeft="5dp"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                    >
+
+                    <EditText
+                        android:id="@+id/fname_edittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/text_size_16" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/middleName_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/M_name"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:paddingLeft="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                    >
+
+
+                    <EditText
+                        android:id="@+id/m_edittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_regular"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/text_size_16" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lastname_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/L_name"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:paddingLeft="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                    >
+
+                    <EditText
+                        android:id="@+id/L_edittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_regular"
+                        android:textColor="@color/black"
+                        android:text=""
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/text_size_16" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mobile_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobile"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:paddingLeft="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                    >
+
+
+                    <EditText
+                        android:id="@+id/phone_edittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_regular"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/text_size_16" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:paddingLeft="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                    >
+
+
+                    <EditText
+                        android:id="@+id/Email_edittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_regular"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/text_size_16" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/father_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/full_name"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:paddingLeft="5dp"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                    >
+
+                    <EditText
+                        android:id="@+id/Fathername_edittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_regular"
+
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/text_size_16" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/address_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:paddingLeft="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                    >
+
+
+                    <EditText
+                        android:id="@+id/address_edittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_regular"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:text=""
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/text_size_16" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/address2_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address2"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:paddingLeft="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                    >
+
+
+                    <EditText
+                        android:id="@+id/address2_edittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_regular"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:text=""
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/text_size_16" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner_bgg"
+                    android:elevation="2dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spin_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:background="@null"
+                        android:minHeight="0dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="8dp"
+                        android:src="@drawable/arrow_down" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner_bgg"
+                    android:elevation="2dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spin_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:background="@null"
+                        android:minHeight="0dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="8dp"
+                        android:src="@drawable/arrow_down" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner_bgg"
+                    android:elevation="2dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spin_dist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:background="@null"
+                        android:minHeight="0dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="8dp"
+                        android:src="@drawable/arrow_down" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner_bgg"
+                    android:elevation="2dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spin_mandal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:background="@null"
+                        android:minHeight="0dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="8dp"
+                        android:src="@drawable/arrow_down" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner_bgg"
+                    android:elevation="2dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spin_village"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:background="@null"
+                        android:minHeight="0dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="8dp"
+                        android:src="@drawable/arrow_down" />
+                </RelativeLayout>
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:id="@+id/date_label"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/birth_date"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:clipChildren="false"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:paddingLeft="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                    >
+
+
+                    <EditText
+                        android:id="@+id/date_edittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_regular"
+                        android:maxLength="10"
+                        android:focusable="false"
+                        android:inputType="date"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/text_size_16" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/pass_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    app:passwordToggleEnabled="true"
+
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:paddingLeft="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                    >
+
+
+                    <EditText
+                        android:id="@+id/pass_edittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_regular"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:text=""
+                        android:inputType="textPassword"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/text_size_16" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner_bgg"
+                    android:elevation="2dp"
+
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spin_roll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:background="@null"
+                        android:minHeight="0dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="8dp"
+                        android:src="@drawable/arrow_down" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/plot_details"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical"
+
+                        android:layout_marginBottom="5dp">
+
+
+
+                        <TextView
+                            style="@style/Common_textView_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:layout_marginRight="@dimen/margin_5"
+                            android:layout_toRightOf="@+id/back"
+                            android:fontFamily="@font/hind_regular"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:text="@string/land_details"
+                            android:textColor="@color/flot_clr"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Total_Area_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Total_Area"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:paddingLeft="5dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                        >
+
+
+                        <EditText
+                            android:id="@+id/Total_Area_edittxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_regular"
+                            android:inputType="textMultiLine"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/text_size_16" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/addresss_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/address"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:paddingLeft="5dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                        >
+
+
+                        <EditText
+                            android:id="@+id/addresss_plot_edittxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_regular"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/text_size_16" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/address_label2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/address"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:paddingLeft="5dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                        >
+
+
+                        <EditText
+                            android:id="@+id/addres_plot_edittxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_regular"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/text_size_16" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/spinner_bgg"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spin_plot_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:background="@null"
+                            android:minHeight="0dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:padding="8dp"
+                            android:src="@drawable/arrow_down" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/spinner_bgg"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spin_plot_dist"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:background="@null"
+                            android:minHeight="0dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:padding="8dp"
+                            android:src="@drawable/arrow_down" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/spinner_bgg"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spin_plot_mandal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:background="@null"
+                            android:minHeight="0dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:padding="8dp"
+                            android:src="@drawable/arrow_down" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/spinner_bgg"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spin_plot_village"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:background="@null"
+                            android:minHeight="0dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:padding="8dp"
+                            android:src="@drawable/arrow_down" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:weightSum="1"
+                    android:visibility="gone"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="Don't have an account?"
+                        android:textAlignment="center"
+                        android:layout_marginTop="6dp"
+                        android:visibility="invisible"
+                        android:textColor="@color/black"
+                        style="@style/Common_textView"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:id="@+id/forgot_password"
+                        android:textColor="@color/flot_clr"
+                        style="@style/Common_textView"
+                        android:text="Forgot Passord?"
+
+                        android:textAlignment="textEnd"
+                        android:textSize="@dimen/text_size"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_margin="5dp"
+
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/signup"
+                style="@style/Common_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/farmer_register" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

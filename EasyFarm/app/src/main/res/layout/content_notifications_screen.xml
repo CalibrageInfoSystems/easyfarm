@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.cis.easyfarm.ui.sync.NotificationsScreen"
+    tools:showIn="@layout/activity_notifications_screen"
+    android:layout_margin="@dimen/margin_5"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/refreshBtn"
+        style="@style/basicBtnStyle"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="50dp"
+        android:visibility="gone"
+        android:text="Refresh" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notificationRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="@dimen/margin_50">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

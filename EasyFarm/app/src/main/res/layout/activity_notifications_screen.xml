@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cis.easyfarm.ui.sync.NotificationsScreen">
+
+    <LinearLayout
+        android:id="@+id/lyt_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/green"
+            android:titleTextColor="#ffffff"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:titleTextColor="@color/whitepure">
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_weight="0.8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/hind_semibold"
+                    android:layout_toRightOf="@+id/back"
+                    android:text="@string/notification"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_20" />
+                <FrameLayout
+                    style="?attr/actionButtonStyle"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:clipToPadding="false"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/refresh"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/reverse_f" />
+
+
+
+                </FrameLayout>
+
+
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+    <include layout="@layout/content_notifications_screen"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

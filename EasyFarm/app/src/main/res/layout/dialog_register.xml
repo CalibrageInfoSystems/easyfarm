@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/transparent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialoue_bg"
+
+        >
+
+        <TextView
+            android:id="@+id/languageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/choose_rester"
+            android:fontFamily="@font/rubik_regular"
+            android:textColor="@color/black2"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+
+            android:layout_below="@+id/languageTitle"
+
+            android:background="@drawable/devider_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_below="@+id/view"
+            android:weightSum="1"
+            android:id="@+id/linear1"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_greenbg"
+                android:id="@+id/facebook"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+
+
+                <com.facebook.login.widget.LoginButton
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_20"
+                    android:background="@color/green"
+                    android:maxWidth="70dp"
+                    android:id="@+id/facebook_Signup"
+                    android:src="@drawable/sync"
+                    android:fontFamily="@font/hind_semibold"
+                    android:text="Facebook \nSignUp"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_greenbg"
+                android:id="@+id/google"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/googleSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_20"
+                    android:background="@color/green"
+                    android:fontFamily="@font/hind_semibold"
+                    android:maxWidth="70dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/sync"
+                    android:text="Google\nSignUp"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/view"
+            android:weightSum="1"
+            android:id="@+id/linear"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_greenbg"
+                android:id="@+id/farmer"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_20"
+                    android:background="@color/green"
+                    android:maxWidth="70dp"
+                    android:id="@+id/farmer_list"
+                    android:src="@drawable/sync"
+                    android:fontFamily="@font/hind_semibold"
+                    android:text="New \nUser"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_greenbg"
+                android:id="@+id/plot"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnplot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_20"
+                    android:background="@color/green"
+                    android:fontFamily="@font/hind_semibold"
+                    android:maxWidth="70dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/sync"
+                    android:text="New\nPlot"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_below="@+id/languageTitle"
+
+            android:background="@drawable/devider_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="end"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/CancelBtn"
+                style="@style/Common_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:textSize="16dp"
+
+                android:gravity="center_vertical"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/button_blackbg"
+                android:textColor="@color/white"
+                android:text="@string/cancel" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

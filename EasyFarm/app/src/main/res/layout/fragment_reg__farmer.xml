@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp"
+    tools:context=".Fragments.Reg_Farmer">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+
+            android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:weightSum="1"
+    android:layout_weight="0.2">
+
+    <com.badoualy.stepperindicator.StepperIndicator
+        android:id="@+id/stepperIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        app:stpi_stepCount="3"
+        app:stpi_animDuration="200"
+        app:stpi_circleColor="@color/flot_clr"
+        app:stpi_circleRadius="10dp"
+        app:stpi_indicatorColor="@color/green"
+        app:stpi_showDoneIcon="true"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/transparent"
+        android:weightSum="1"
+        android:layout_weight="0.8">
+
+    <com.cis.easyfarm.common.NonSwipeableViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/stepperIndicator"
+        android:layout_marginTop="5dp"
+        tools:context="in.calibrage.stepbar.BecomePartnerActivity" />
+
+</LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+</FrameLayout>

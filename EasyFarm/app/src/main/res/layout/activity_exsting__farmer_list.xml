@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/margin_50"
+        android:background="@color/white"
+        android:id="@+id/mainlinear"
+
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/ToolBarTheme.ToolBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/green"
+
+            app:title="Product Request">
+
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_weight="0.8"
+                    android:layout_width="0dp"
+                    style="@style/Common_textView_title"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/rubik_regular"
+                    android:layout_toRightOf="@+id/back"
+                    android:text="@string/exist_user_reg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_20" />
+                <ImageView
+                    android:layout_weight="0.2"
+                    android:visibility="invisible"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:padding="@dimen/margin_5"
+                    android:id="@+id/home_btn"
+                    />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:id="@+id/scoll"
+
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linear"
+
+                android:padding="10dp"
+
+
+                android:layout_marginBottom="@dimen/margin_50"
+                android:paddingBottom="@dimen/margin_50"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+
+                    android:padding="5dp"
+                    android:background="@drawable/ed_bg" >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+
+                            android:text="@string/farmer_name"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/farmerName"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text=""
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/devider_black" />
+                    <LinearLayout
+                        android:id="@+id/lyt_fathername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_weight="0.5"
+                            android:text="@string/fa_hu_name"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/fatherName"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text=""
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/devider_black" />
+                    <LinearLayout
+                        android:id="@+id/lyt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text="@string/email"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:id="@+id/emailid"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text=""
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/devider_black" />
+                    <LinearLayout
+                        android:id="@+id/lyt_alt_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text="@string/mobilee"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:id="@+id/alternatemobilenumber"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text=""
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/lin_alter"
+                        android:orientation="horizontal"
+                        android:background="@drawable/devider_black" />
+                    <LinearLayout
+                        android:id="@+id/lyt_date_birth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text="@string/date_birth"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:id="@+id/dateofbirth"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text=""
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/devider_black" />
+                    <LinearLayout
+                        android:id="@+id/lyt_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text="@string/genderr"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+
+
+
+                        <TextView
+                            android:id="@+id/gender"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text=""
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/lin_edu"
+                        android:orientation="horizontal"
+                        android:background="@drawable/devider_black" />
+                    <TextView
+                        style="@style/Common_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/res_address"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_14dp"
+                        android:textColor="@color/colorPrimaryDarkSplash" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/devider_black" />
+                    <LinearLayout
+                        android:id="@+id/lyt_plot_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text="@string/statee"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:id="@+id/state"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text=""
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/devider_black" />
+                    <LinearLayout
+                        android:id="@+id/lyt_plotdist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text="@string/district"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:id="@+id/district"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text=""
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/devider_black" />
+                    <LinearLayout
+                        android:id="@+id/lyt_plot_mandal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text="@string/mandall"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:id="@+id/mandal"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text=""
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/devider_black" />
+                    <LinearLayout
+                        android:id="@+id/lyt_plot_village"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <TextView
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text="@string/villagee"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/village"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text=""
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/devider_black" />
+                    <LinearLayout
+                        android:id="@+id/lyt_role"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <TextView
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text="@string/exist_role"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/ext_role"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:text=""
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/plot_info"
+                        android:visibility="gone"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:orientation="vertical"
+                            android:id="@+id/ka"
+                            android:layout_weight="0.1"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/devider_black" />
+
+
+                        <TextView
+                            style="@style/Common_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/plot_address"
+                            android:textAlignment="textStart"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_14dp"
+                            android:textColor="@color/colorPrimaryDarkSplash" />
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/devider_black" />
+                        <LinearLayout
+                            android:id="@+id/lyt_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:text="@string/statee"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black" />
+
+
+                            <TextView
+                                android:id="@+id/plot_state"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:text=""
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/devider_black" />
+                        <LinearLayout
+                            android:id="@+id/lyt_dist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:text="@string/distt"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black" />
+
+
+                            <TextView
+                                android:id="@+id/plotdistrict"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:text=""
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/devider_black" />
+                        <LinearLayout
+                            android:id="@+id/lyt_mandal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:text="@string/mandall"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black" />
+
+
+                            <TextView
+                                android:id="@+id/plotmandal"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:text=""
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/devider_black" />
+                        <LinearLayout
+                            android:id="@+id/lyt_village"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:text="@string/villagee"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/plotvillage"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:text=""
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/devider_black" />
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/lyt_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:text="@string/addresss"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/address"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:text=" "
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/devider_black" />
+                        <LinearLayout
+                            android:id="@+id/lyt_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:text="@string/addresss2"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/address2"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.6"
+                                android:text=""
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/margin_15"
+
+                    android:background="@drawable/spinner_bgg"
+                    android:elevation="2dp"
+
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+
+                        tools:ignore="UselessParent">
+                        <Spinner
+                            android:id="@+id/spin_roll"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:background="@null"
+                            android:layout_weight="0.9"
+                            android:minHeight="0dp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:padding="8dp"
+                            android:src="@drawable/arrow_down" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_9sdp"
+                        android:layout_marginTop="-2dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/rubik_regular"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:text="@string/new_role"
+                        android:textColor="@color/black2" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/plot_details"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical"
+
+                        android:layout_marginBottom="5dp">
+
+
+
+                        <TextView
+                            style="@style/Common_textView_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_toRightOf="@+id/back"
+                            android:fontFamily="@font/rubik_regular"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:text="@string/land_details"
+                            android:textColor="@color/flot_clr"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Total_Area_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Total_Area"
+                        android:paddingLeft="5dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+                        <EditText
+                            android:id="@+id/Total_Area_edittxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_regular"
+                            android:inputType="numberDecimal"
+                            android:text=""
+                            android:maxLength="10"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/text_size_16" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/addresss_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/address"
+
+                        android:paddingLeft="5dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                        >
+
+
+                        <EditText
+                            android:id="@+id/addresss_plot_edittxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_regular"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:maxLength="30"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/text_size_16" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/address_label2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/address2"
+
+                        android:paddingLeft="5dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                        >
+
+
+                        <EditText
+                            android:id="@+id/addres_plot_edittxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_regular"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:maxLength="30"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/text_size_16" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/margin_8"
+
+                        android:background="@drawable/spinner_bgg"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/_3sdp"
+                            android:layout_weight="8"
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+
+                            tools:ignore="UselessParent">
+
+                            <Spinner
+                                android:id="@+id/spin_plot_state"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:layout_weight="0.9"
+                                android:background="@null"
+                                android:minHeight="0dp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:padding="8dp"
+                                android:layout_weight="0.1"
+                                android:src="@drawable/arrow_down" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_9sdp"
+                            android:layout_marginTop="-2dp"
+                            android:background="@color/whitepure"
+                            android:fontFamily="@font/rubik_regular"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:paddingRight="@dimen/_3sdp"
+                            android:text="@string/state"
+                            android:textColor="@color/gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/margin_8"
+
+                        android:background="@drawable/spinner_bgg"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/_3sdp"
+                            android:layout_weight="8"
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+
+                            tools:ignore="UselessParent">
+                            <Spinner
+                                android:id="@+id/spin_plot_dist"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:layout_weight="0.9"
+                                android:background="@null"
+                                android:entries="@array/items_class"
+                                android:minHeight="0dp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_weight="0.1"
+                                android:padding="8dp"
+                                android:src="@drawable/arrow_down" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_9sdp"
+                            android:layout_marginTop="-2dp"
+                            android:background="@color/whitepure"
+                            android:fontFamily="@font/rubik_regular"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:paddingRight="@dimen/_3sdp"
+                            android:text="@string/dist"
+                            android:textColor="@color/gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/margin_8"
+
+                        android:background="@drawable/spinner_bgg"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/_3sdp"
+                            android:layout_weight="8"
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+
+                            tools:ignore="UselessParent">
+                            <Spinner
+                                android:id="@+id/spin_plot_mandal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:layout_weight="0.9"
+                                android:background="@null"
+                                android:entries="@array/items_Mandal"
+                                android:minHeight="0dp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="0.1"
+                                android:layout_alignParentBottom="true"
+                                android:padding="8dp"
+                                android:src="@drawable/arrow_down" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_9sdp"
+                            android:layout_marginTop="-2dp"
+                            android:background="@color/whitepure"
+                            android:fontFamily="@font/rubik_regular"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:paddingRight="@dimen/_3sdp"
+                            android:text="@string/mandal"
+                            android:textColor="@color/gray" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/margin_8"
+
+                        android:background="@drawable/spinner_bgg"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/_3sdp"
+                            android:layout_weight="8"
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+
+                            tools:ignore="UselessParent">
+                            <Spinner
+                                android:id="@+id/spin_plot_village"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:entries="@array/items_Village"
+                                android:layout_weight="0.9"
+                                android:background="@null"
+                                android:minHeight="0dp" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.1"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:padding="8dp"
+                                android:src="@drawable/arrow_down" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_9sdp"
+                            android:layout_marginTop="-2dp"
+                            android:background="@color/whitepure"
+                            android:fontFamily="@font/rubik_regular"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:paddingRight="@dimen/_3sdp"
+                            android:text="@string/village"
+                            android:textColor="@color/gray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+    <RelativeLayout android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_10"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/submit"
+            style="@style/Common_Button"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_gradient"
+
+    tools:context=".ui.EditVendor">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBarTheme.ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        app:title="Product Request">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="0.8"
+                android:layout_width="0dp"
+                style="@style/Common_textView_title"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/rubik_regular"
+                android:layout_toRightOf="@+id/back"
+                android:text="Edit Vendor"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+            <ImageView
+                android:layout_weight="0.2"
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:padding="@dimen/margin_5"
+                android:id="@+id/home_btn"
+                />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <com.badoualy.stepperindicator.StepperIndicator
+        android:id="@+id/stepperIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        app:stpi_stepCount="2"
+        app:stpi_animDuration="200"
+        app:stpi_circleColor="@color/whitepure"
+        app:stpi_circleRadius="10dp"
+        app:stpi_indicatorColor="@color/green"
+        app:stpi_showDoneIcon="true"/>
+
+
+
+    <com.cis.easyfarm.common.NonSwipeableViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/stepperIndicator"
+        android:layout_marginTop="5dp"
+        tools:context="in.calibrage.stepbar.BecomePartnerActivity" />
+
+</RelativeLayout>

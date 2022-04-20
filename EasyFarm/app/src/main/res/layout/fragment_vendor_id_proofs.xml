@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.vendorIdProofs">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/govtid"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        style="@style/Common_textView_title"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind_semibold"
+        android:text="@string/government"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_15"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/static_text"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_above="@+id/bottomLayout">
+
+        <LinearLayout
+            android:id="@+id/landlordidproof_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/Common_textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_toRightOf="@+id/back"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center_vertical"
+                android:text="ID Proofs"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:background="@drawable/ed_bg"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/spinner_bgg"
+                            android:elevation="2dp"
+
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_3sdp"
+                                android:weightSum="1"
+                                android:orientation="horizontal"
+
+                                tools:ignore="UselessParent">
+                                <Spinner
+                                    android:id="@+id/idProofsSpinner"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/margin_10"
+                                    android:background="@null"
+                                    android:layout_weight="0.9"
+                                    android:minHeight="0dp" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:padding="8dp"
+                                    android:src="@drawable/arrow_down" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_9sdp"
+                                android:layout_marginTop="-2dp"
+                                android:background="@color/white"
+                                android:fontFamily="@font/rubik_regular"
+                                android:paddingLeft="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_3sdp"
+                                android:text="@string/id_proofss"
+                                android:textColor="@color/black2" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/address_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Id_number"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:paddingLeft="5dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                        >
+
+
+                        <EditText
+                            android:id="@+id/idproofsEdttext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_regular"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:maxLength="50"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/text_size_16" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        >  <TextView
+                        android:id="@+id/stateTxt"
+                        style="@style/Common_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:textColor="@color/black2"
+                        android:padding="5dp"
+                        android:text="@string/id_proofs" />
+
+                        <ImageView
+                            android:id="@+id/idproofsImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+                            android:elevation="4dp"
+                            android:src="@mipmap/imgdefault"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/CancelBtn"
+                            style="@style/Common_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:visibility="gone"
+                            android:textSize="@dimen/margin_20"
+                            android:textColor="@color/black2"
+                            android:text="@string/cancel" />
+                        <Button
+                            android:id="@+id/SaveButton"
+                            style="@style/basicBtnStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30dp"
+                            android:layout_margin="10dp"
+                            android:text="@string/upload" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/idProofsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <ImageView
+                    android:id="@+id/addRowlandLordImg"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:visibility="gone"
+                    android:src="@drawable/plus" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:orientation="vertical"-->
+        <!--        android:gravity="center"-->
+        <!--        android:paddingTop="50dp"-->
+        <!--        android:layout_marginBottom="@dimen/margin_15">-->
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/Adhar_label"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="@string/adhar_number"-->
+        <!--            android:layout_marginLeft="@dimen/margin_5"-->
+        <!--            android:layout_marginRight="@dimen/margin_5"-->
+        <!--            android:paddingLeft="5dp"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+        <!--            <EditText-->
+        <!--                android:id="@+id/Adhar_edittxt"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:fontFamily="@font/hind_regular"-->
+        <!--                android:text=""-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textColorHint="@color/gray"-->
+        <!--                android:textSize="@dimen/text_size_16" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_marginTop="@dimen/margin_10"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:layout_height="wrap_content">-->
+        <!--        <Button-->
+        <!--            android:id="@+id/adhar_upload"-->
+        <!--            style="@style/Common_Button"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:layout_toRightOf="@+id/back"-->
+        <!--            android:background="@drawable/btn_bg"-->
+        <!--            android:fontFamily="@font/hind_regular"-->
+
+        <!--            android:text="@string/adhar"-->
+        <!--            android:textSize="@dimen/activity_horizontal_margin" />-->
+        <!--            <RelativeLayout-->
+        <!--                android:id="@+id/adhar_main"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="@dimen/margin_5"-->
+        <!--                >-->
+        <!--                <TextView-->
+        <!--                    android:id="@+id/docText"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="abc..................." />-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/deleteIcon"-->
+        <!--                    android:layout_width="30dp"-->
+        <!--                    android:layout_height="30dp"-->
+        <!--                    android:layout_alignParentTop="true"-->
+        <!--                    android:layout_gravity="end"-->
+        <!--                    android:layout_toRightOf="@id/docText"-->
+        <!--                    android:src="@drawable/ic_cross" />-->
+        <!--            </RelativeLayout>-->
+
+        <!--        </LinearLayout>-->
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/pan_label"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="@string/pan_number"-->
+        <!--            android:layout_marginLeft="@dimen/margin_5"-->
+        <!--            android:layout_marginRight="@dimen/margin_5"-->
+        <!--            android:paddingLeft="5dp"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/pan_edittxt"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:fontFamily="@font/hind_regular"-->
+        <!--                android:text=""-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textColorHint="@color/gray"-->
+        <!--                android:textSize="@dimen/text_size_16" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_marginTop="@dimen/margin_10"-->
+        <!--        android:layout_marginLeft="10dp"-->
+        <!--        android:layout_marginRight="10dp"-->
+        <!--        android:layout_height="wrap_content">-->
+        <!--        <Button-->
+        <!--            android:id="@+id/pan_upload"-->
+        <!--            style="@style/Common_Button"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:background="@drawable/btn_bg"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:fontFamily="@font/hind_regular"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="Pan Card"-->
+        <!--            android:textSize="@dimen/activity_horizontal_margin" />-->
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/pan_main"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="@dimen/margin_5"-->
+        <!--            >-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/docText2"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="abc..................." />-->
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/deleteIcon2"-->
+        <!--                android:layout_width="30dp"-->
+        <!--                android:layout_height="30dp"-->
+        <!--                android:layout_alignParentTop="true"-->
+        <!--                android:layout_gravity="end"-->
+        <!--                android:layout_toRightOf="@id/docText2"-->
+        <!--                android:src="@drawable/ic_cross" />-->
+        <!--        </RelativeLayout>-->
+        <!--    </LinearLayout>-->
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/dl_label"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="Enter Driving License Number"-->
+        <!--            android:layout_marginLeft="@dimen/margin_5"-->
+        <!--            android:layout_marginRight="@dimen/margin_5"-->
+        <!--            android:paddingLeft="5dp"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/dl_edittxt"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:fontFamily="@font/hind_regular"-->
+        <!--                android:text=""-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textColorHint="@color/gray"-->
+        <!--                android:textSize="@dimen/text_size_16" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_marginTop="@dimen/margin_10"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:layout_height="wrap_content">-->
+        <!--            <Button-->
+        <!--                android:id="@+id/dl_upload"-->
+        <!--                style="@style/Common_Button"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@drawable/btn_bg"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:fontFamily="@font/hind_regular"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="Driving License"-->
+        <!--                android:textSize="@dimen/activity_horizontal_margin" />-->
+        <!--            <RelativeLayout-->
+        <!--                android:id="@+id/dl_main"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="@dimen/margin_5"-->
+        <!--                >-->
+        <!--                <TextView-->
+        <!--                    android:id="@+id/docText3"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="abc..................." />-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/deleteIcon3"-->
+        <!--                    android:layout_width="30dp"-->
+        <!--                    android:layout_height="30dp"-->
+        <!--                    android:layout_alignParentTop="true"-->
+        <!--                    android:layout_gravity="end"-->
+        <!--                    android:layout_toRightOf="@id/docText3"-->
+        <!--                    android:src="@drawable/ic_cross" />-->
+        <!--            </RelativeLayout>-->
+        <!--        </LinearLayout>-->
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/ration_label"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="Enter Ration Card Number"-->
+        <!--            android:layout_marginLeft="@dimen/margin_5"-->
+        <!--            android:layout_marginRight="@dimen/margin_5"-->
+        <!--            android:paddingLeft="5dp"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/ration_edittxt"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:fontFamily="@font/hind_regular"-->
+        <!--                android:text=""-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textColorHint="@color/gray"-->
+        <!--                android:textSize="@dimen/text_size_16" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_marginTop="@dimen/margin_10"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:layout_height="wrap_content">-->
+        <!--            <Button-->
+        <!--                android:id="@+id/ration_upload"-->
+        <!--                style="@style/Common_Button"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@drawable/btn_bg"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:fontFamily="@font/hind_regular"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="Ration Card"-->
+        <!--                android:textSize="@dimen/activity_horizontal_margin" />-->
+        <!--            <RelativeLayout-->
+        <!--                android:id="@+id/ration_main"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="@dimen/margin_5"-->
+        <!--                >-->
+        <!--                <TextView-->
+        <!--                    android:id="@+id/docText4"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="abc..................." />-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/deleteIcon4"-->
+        <!--                    android:layout_width="30dp"-->
+        <!--                    android:layout_height="30dp"-->
+        <!--                    android:layout_alignParentTop="true"-->
+        <!--                    android:layout_gravity="end"-->
+        <!--                    android:layout_toRightOf="@id/docText4"-->
+        <!--                    android:src="@drawable/ic_cross" />-->
+        <!--            </RelativeLayout>-->
+        <!--        </LinearLayout>-->
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/passport_label"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="Enter Passport Number"-->
+        <!--            android:layout_marginLeft="@dimen/margin_5"-->
+        <!--            android:layout_marginRight="@dimen/margin_5"-->
+        <!--            android:paddingLeft="5dp"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/passport_edittxt"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:fontFamily="@font/hind_regular"-->
+        <!--                android:text=""-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textColorHint="@color/gray"-->
+        <!--                android:textSize="@dimen/text_size_16" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_marginTop="@dimen/margin_10"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:layout_height="wrap_content">-->
+        <!--            <Button-->
+        <!--                android:id="@+id/passport_upload"-->
+        <!--                style="@style/Common_Button"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@drawable/btn_bg"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:fontFamily="@font/hind_regular"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="Passport"-->
+        <!--                android:textSize="@dimen/activity_horizontal_margin" />-->
+        <!--            <RelativeLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="@dimen/margin_5"-->
+        <!--                android:id="@+id/passport_main"-->
+        <!--                >-->
+        <!--                <TextView-->
+        <!--                    android:id="@+id/docText5"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="abc..................." />-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/deleteIcon5"-->
+        <!--                    android:layout_width="30dp"-->
+        <!--                    android:layout_height="30dp"-->
+        <!--                    android:layout_alignParentTop="true"-->
+        <!--                    android:layout_gravity="end"-->
+        <!--                    android:layout_toRightOf="@id/docText5"-->
+        <!--                    android:src="@drawable/ic_cross" />-->
+        <!--            </RelativeLayout>-->
+        <!--        </LinearLayout>-->
+
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/kisan_label"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="Enter Kisan Card Number"-->
+        <!--            android:layout_marginLeft="@dimen/margin_5"-->
+        <!--            android:layout_marginRight="@dimen/margin_5"-->
+        <!--            android:paddingLeft="5dp"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/kisan_edittxt"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:fontFamily="@font/hind_regular"-->
+        <!--                android:text=""-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textColorHint="@color/gray"-->
+        <!--                android:textSize="@dimen/text_size_16" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_marginTop="@dimen/margin_10"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:layout_height="wrap_content">-->
+        <!--            <Button-->
+        <!--                android:id="@+id/kisan_upload"-->
+        <!--                style="@style/Common_Button"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@drawable/btn_bg"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:fontFamily="@font/hind_regular"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="Kisan Card"-->
+        <!--                android:textSize="@dimen/activity_horizontal_margin" />-->
+        <!--            <RelativeLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="@dimen/margin_5"-->
+        <!--                android:id="@+id/kisan_main"-->
+        <!--                >-->
+        <!--                <TextView-->
+        <!--                    android:id="@+id/docText6"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="abc..................." />-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/deleteIcon6"-->
+        <!--                    android:layout_width="30dp"-->
+        <!--                    android:layout_height="30dp"-->
+        <!--                    android:layout_alignParentTop="true"-->
+        <!--                    android:layout_gravity="end"-->
+        <!--                    android:layout_toRightOf="@id/docText6"-->
+        <!--                    android:src="@drawable/ic_cross" />-->
+        <!--            </RelativeLayout>-->
+        <!--        </LinearLayout>-->
+
+        <!--    </LinearLayout>-->
+
+    </ScrollView>
+
+    <RelativeLayout
+
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            android:layout_alignParentLeft="true"
+            android:id="@+id/backBT"
+            style="@style/Common_Button"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="12dp"
+            app:fabCustomSize="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:src="@drawable/left_arrow"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/nextBT"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/green"
+            android:src="@drawable/ic_right_arrow"
+            app:fabCustomSize="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!--        <Button-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:id="@+id/nextBT"-->
+        <!--            style="@style/Common_Button"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:minWidth="50dp"-->
+        <!--            android:text="next"-->
+        <!--            android:textColor="@color/white" />-->
+
+    </RelativeLayout>
+
+
+</FrameLayout>

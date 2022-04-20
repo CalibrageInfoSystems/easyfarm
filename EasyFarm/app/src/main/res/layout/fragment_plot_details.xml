@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@color/white"
+    tools:context="com.cis.easyfarm.Fragments.Convert_plotdetails_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/plotrecycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginLeft="@dimen/margin_5"
+
+        android:layout_marginRight="@dimen/margin_5"
+        android:layout_marginBottom="100dp"
+        android:clipToPadding="false"
+        android:scrollbarSize="3dp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@color/colorPrimary"
+        android:scrollbars="vertical" />
+
+    <RelativeLayout
+
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            android:layout_alignParentLeft="true"
+            android:id="@+id/backBT"
+            style="@style/Common_Button"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="12dp"
+            app:fabCustomSize="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:src="@drawable/left_arrow"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/nextBT"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="12dp"
+            android:visibility="gone"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/green"
+            android:src="@drawable/ic_right_arrow"
+            app:fabCustomSize="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!--        <Button-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:id="@+id/nextBT"-->
+        <!--            style="@style/Common_Button"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:minWidth="50dp"-->
+        <!--            android:text="next"-->
+        <!--            android:textColor="@color/white" />-->
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="1">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/margin_20" />
+    </LinearLayout>
+</FrameLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/white"-->
+
+
+<!--    >-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_marginBottom="50dp">-->
+
+
+
+
+
+
+<!--        <TextView-->
+<!--            style="@style/Common_textView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="@string/plot_address"-->
+<!--            android:textAlignment="textStart"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="@dimen/_14dp"-->
+<!--            android:textColor="@color/colorOrange" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0.3dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:background="@drawable/devider_line" />-->
+
+
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_landmark"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/country"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/landmark"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_state"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/state"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/state"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text="@string/state"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_dist"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/dist"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/district"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text="@string/dist"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_mandal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/mandal"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/mandal"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text="@string/mandal"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_village"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/village"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/village"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text="@string/village"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+
+
+
+
+
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_address"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/addresss"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/address"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text=" "-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_mobile"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/addresss2"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/address2"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text="@string/mobile"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/green" />-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_passbook"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/passbook_number"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/passbook"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_survernumber"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/surveynumber"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/servey_number"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_owner_contact_number"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/ownermobile"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/gender"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_owner_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/owner_name"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/ownername"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:hint="Plot No: 132/A"-->
+<!--                android:textAlignment="textStart"-->
+
+
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0.3dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:background="@drawable/devider_line" />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_plot_code"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/plot_code"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/plotcode"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_status"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/status"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/status"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_totalarea"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/total_Area"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/totalarea"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_Adapted"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/Adopted_Area"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/adopted_area"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_gps"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/Gps_Area"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/ifsc_Code"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lyt_plotownership"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.4"-->
+<!--                android:text="@string/plot_ownership"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--            <TextView-->
+
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_weight="0.05"-->
+<!--                android:fontFamily="@font/rubik_regular"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=":"-->
+<!--                android:textSize="@dimen/album_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/plot_ownership"-->
+<!--                style="@style/Common_textView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_weight="0.6"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0.3dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:background="@drawable/devider_line" />-->
+<!--    </LinearLayout>-->
+
+<!--</ScrollView>-->

@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cis.easyfarm.ui.Farmer_list">
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:theme="@style/AppTheme.AppBarOverlay">-->
+
+    <!--        <androidx.appcompat.widget.Toolbar-->
+    <!--            android:id="@+id/toolbar"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="?attr/actionBarSize"-->
+    <!--            android:background="?attr/colorPrimary"-->
+    <!--            app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <LinearLayout
+        android:id="@+id/lyt_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/green"
+            android:titleTextColor="#ffffff"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:titleTextColor="@color/black">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left">
+
+                <TextView
+                    style="@style/Common_textView_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:fontFamily="@font/rubik_regular"
+                    android:text="Add Plot Details"
+                    android:id="@+id/calender_title"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/static_text"
+    android:layout_above="@+id/bottomLayout">
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_bg"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/margin_15">
+
+
+
+            <TextView
+                style="@style/Common_textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_toRightOf="@+id/back"
+                android:fontFamily="@font/rubik_regular"
+
+                android:gravity="center_vertical"
+                android:text="@string/land_details"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Farmer_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Farmercode"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+            >
+
+
+            <EditText
+                android:id="@+id/Farmer_code_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Total_Area_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Total_Area"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+            >
+
+
+            <EditText
+                android:id="@+id/Total_Area_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:maxLength="6"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Adopted_Area_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Adopted_Area"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+            >
+
+
+            <EditText
+                android:id="@+id/Adopted_area_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:visibility="gone"
+            android:id="@+id/Palm_Area_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Palm_Area"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <EditText
+                android:id="@+id/Palm_Area_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Gps_Area_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/Gps_Area"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="0.75"
+
+                android:paddingLeft="5dp"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:id="@+id/gps_are_edittxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_regular"
+                    android:inputType="numberDecimal"
+                    android:text=""
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:editable="false"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+
+
+                    android:textSize="@dimen/text_size_16" />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/geo_boundaries"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_weight="0.25"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="Geo Boundaries"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+            <!--    <ImageView-->
+            <!--        android:layout_width="0dp"-->
+            <!--        android:layout_weight="0.2"-->
+            <!--        android:layout_gravity="center"-->
+            <!--        android:layout_height="match_parent"-->
+            <!--      android:layout_margin="@dimen/margin_10"-->
+            <!--        android:background="@drawable/gps_icon">-->
+
+            <!--    </ImageView>-->
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/surveynumber_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/surveynumber"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <EditText
+                android:id="@+id/surveynumber_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passbook_number_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/passbook_number"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <EditText
+                android:id="@+id/passbook_number_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:maxLength="20"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/spinner_bgg"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+
+                tools:ignore="UselessParent">
+                <Spinner
+                    android:id="@+id/spin_Ownership"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:minHeight="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_marginLeft="@dimen/margin_10"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="0.1"
+                    android:padding="8dp"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginTop="-2dp"
+                android:background="@color/white"
+                android:fontFamily="@font/rubik_regular"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:text="@string/ownership"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Owner Name*"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <EditText
+                android:id="@+id/owner_name_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/owner_contactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Owner Contact Number*"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <EditText
+                android:id="@+id/owner_contactNumber_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="number"
+                android:text=""
+                android:maxEms="10"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/spinner_bgg"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spin_plotStatus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:minHeight="0dp"
+                android:layout_marginLeft="@dimen/margin_10"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:padding="8dp"
+                android:src="@drawable/arrow_down" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginTop="-2dp"
+                android:background="@color/white"
+                android:fontFamily="@font/rubik_regular"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:text="Plot Status*"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/address_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <EditText
+                android:id="@+id/address_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:text=""
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/address_label2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address2"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <EditText
+                android:id="@+id/addres_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:text=""
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/spinner_bgg"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+
+                tools:ignore="UselessParent">
+                <Spinner
+                    android:id="@+id/spin_state"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:background="@null"
+                    android:layout_weight="0.9"
+                    android:minHeight="0dp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="0.1"
+                    android:layout_alignParentBottom="true"
+                    android:padding="8dp"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginTop="-2dp"
+                android:background="@color/white"
+                android:fontFamily="@font/rubik_regular"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:text="@string/state"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/spinner_bgg"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+
+                tools:ignore="UselessParent">
+                <Spinner
+                    android:id="@+id/spin_district"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:background="@null"
+                    android:layout_weight="0.9"
+                    android:entries="@array/items_class"
+                    android:minHeight="0dp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:padding="8dp"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginTop="-2dp"
+                android:background="@color/white"
+                android:fontFamily="@font/rubik_regular"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:text="@string/dist"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/spinner_bgg"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+
+                tools:ignore="UselessParent">
+                <Spinner
+                    android:id="@+id/spin_mandal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:background="@null"
+                    android:layout_weight="0.9"
+                    android:entries="@array/items_Mandal"
+                    android:minHeight="0dp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="0.1"
+                    android:padding="8dp"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginTop="-2dp"
+                android:background="@color/white"
+                android:fontFamily="@font/rubik_regular"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:text="@string/mandal"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/spinner_bgg"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+
+                tools:ignore="UselessParent">
+                <Spinner
+                    android:id="@+id/spin_village"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="0.9"
+                    android:entries="@array/items_Village"
+                    android:background="@null"
+                    android:minHeight="0dp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="0.1"
+                    android:layout_alignParentBottom="true"
+                    android:padding="8dp"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginTop="-2dp"
+                android:background="@color/white"
+                android:fontFamily="@font/rubik_regular"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:text="@string/village"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:visibility="gone"
+            android:id="@+id/pin_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pincode"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/pin_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginTop="@dimen/margin_5"-->
+<!--            android:layout_marginLeft="@dimen/margin_5"-->
+<!--            android:layout_marginRight="10dp"-->
+
+<!--            android:elevation="2dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <Button-->
+<!--                android:id="@+id/geo_boundaries"-->
+<!--                style="@style/Common_Button"-->
+<!--                android:layout_width="wrap_content"-->
+
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:text="Geo  Boundaries" />-->
+<!--        </RelativeLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/Common_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".ui.userAccount.AddplotActivity">-->
+
+<!--</RelativeLayout>-->

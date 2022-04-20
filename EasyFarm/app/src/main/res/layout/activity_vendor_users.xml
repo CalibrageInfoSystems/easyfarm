@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/usere_info_header"
+    tools:context=".ui.userAccount.Vendor_users">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/green"
+        android:titleTextColor="#ffffff"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:titleTextColor="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left">
+
+            <TextView
+                style="@style/Common_textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Vendors"
+                android:id="@+id/calender_title"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/white_bg"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="80dp"
+            android:layout_weight="0.35"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:weightSum="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pro_vendors"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:cardCornerRadius="@dimen/margin_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/greencard_bgg"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Common_textView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/rubik_regular"
+                        android:text="@string/prosvendors"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/margin_20" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/linear"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_weight="0.2"
+                        >
+
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle"
+                            android:drawableTop="@drawable/truck_f"
+                            android:paddingTop="15dp"
+
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:visibility="gone"
+
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:weightSum="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/converted_vendors"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:cardCornerRadius="@dimen/margin_10">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/greencard_bgg"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Common_textView"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:textSize="@dimen/margin_20"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:layout_height="wrap_content"
+                        android:text="@string/convvendors" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/linea2"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_weight="0.2"
+                        >
+
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/circle"
+                            android:drawableTop="@drawable/truck_f"
+                            android:paddingTop="15dp"
+
+                            />
+
+
+                        />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

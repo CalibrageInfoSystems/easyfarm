@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.cis.easyfarm.Fragments.Signup_fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/static_text"
+        android:layout_above="@+id/bottomLayout">
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_bg"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/margin_15">
+
+        <TextView
+            style="@style/Common_textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_toRightOf="@+id/back"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center_vertical"
+            android:text="Soil Details "
+            android:textColor="@color/flot_clr"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/spinner_bgg"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+
+                tools:ignore="UselessParent">
+                <Spinner
+                    android:id="@+id/spin_soilType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:minHeight="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_marginLeft="@dimen/margin_10"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="0.1"
+                    android:padding="8dp"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginTop="-2dp"
+                android:background="@color/white"
+                android:fontFamily="@font/rubik_regular"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:text="Soil Type *"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_15">
+
+            <TextView
+                style="@style/Common_textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_toRightOf="@+id/back"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center_vertical"
+                android:text="Soil Test Report "
+                android:textColor="@color/flot_clr"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/spinner_bgg"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+
+                tools:ignore="UselessParent">
+                <Spinner
+                    android:id="@+id/spin_soil_culture_Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:minHeight="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_marginLeft="@dimen/margin_10"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="0.1"
+                    android:padding="8dp"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginTop="-2dp"
+                android:background="@color/white"
+                android:fontFamily="@font/rubik_regular"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:text="Soil Culture Type  *"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Nitrogen_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nitrogen in (%) *"
+
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/Nitrogen_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:textColor="@color/black"
+                android:maxLength="5"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Prosperous_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prosperous in (%) *"
+
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/Prosperous_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:textColor="@color/black"
+                android:maxLength="5"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Potassium_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Potassium in (%) *"
+
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/Potassium_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:textColor="@color/black"
+                android:maxLength="5"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Carbon_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Carbon in (%) *"
+
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/Carbon_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:textColor="@color/black"
+                android:maxLength="5"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Hydrogen_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hydrogen in (%) *"
+
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/Hydrogen_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:textColor="@color/black"
+                android:maxLength="5"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Oxygen_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Oxygen in (%) *"
+
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/Oxygen_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:textColor="@color/black"
+                android:maxLength="5"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Sulphur_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sulphur in (%) *"
+
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/Sulphur_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:textColor="@color/black"
+                android:maxLength="5"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Calcium_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Calcium in (%) *"
+
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/Calcium_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:textColor="@color/black"
+                android:maxLength="5"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Magnesium_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Magnesium in (%) *"
+
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/Magnesium_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:textColor="@color/black"
+                android:maxLength="5"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_10"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="SoilReport Image"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+                <ImageView
+                    android:id="@+id/img_soilReport"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/imgdefault" />
+            </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_15">
+
+            <TextView
+                style="@style/Common_textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_toRightOf="@+id/back"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center_vertical"
+                android:text="Irrigation Details"
+                android:textColor="@color/flot_clr"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/spinner_bgg"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+
+                tools:ignore="UselessParent">
+                <Spinner
+                    android:id="@+id/spin_irrigationType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:minHeight="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_marginLeft="@dimen/margin_10"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="0.1"
+                    android:padding="8dp"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginTop="-2dp"
+                android:background="@color/white"
+                android:fontFamily="@font/rubik_regular"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:text="Irrigation Type *"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_15">
+
+            <TextView
+                style="@style/Common_textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_toRightOf="@+id/back"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center_vertical"
+                android:text="Power Details "
+                android:textColor="@color/flot_clr"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/spinner_bgg"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+
+                tools:ignore="UselessParent">
+                <Spinner
+                    android:id="@+id/spin_powerAvailability"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:minHeight="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_marginLeft="@dimen/margin_10"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="0.1"
+                    android:padding="8dp"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginTop="-2dp"
+                android:background="@color/white"
+                android:fontFamily="@font/rubik_regular"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:text="Power Availability Type *"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/serviceNumber_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Service/Meter Number*"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingLeft="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/serviceNumber_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/saveButton"
+                style="@style/Common_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:text="Save" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            android:layout_alignParentLeft="true"
+            android:id="@+id/backBT"
+            style="@style/Common_Button"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="12dp"
+            app:fabCustomSize="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:src="@drawable/left_arrow" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

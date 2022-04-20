@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/green_gradient"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/green"
+        android:titleTextColor="#ffffff"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:titleTextColor="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left">
+
+            <TextView
+                style="@style/Common_textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Farmer Details "
+                android:id="@+id/calender_title"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.badoualy.stepperindicator.StepperIndicator
+        android:id="@+id/stepperIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        app:stpi_stepCount="5"
+        app:stpi_animDuration="200"
+        app:stpi_circleColor="@color/whitepure"
+        app:stpi_circleRadius="10dp"
+        app:stpi_indicatorColor="@color/green"
+        app:stpi_showDoneIcon="true"/>
+
+
+
+    <com.cis.easyfarm.common.NonSwipeableViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/stepperIndicator"
+        android:layout_marginTop="5dp"
+        tools:context="in.calibrage.stepbar.BecomePartnerActivity" />
+</RelativeLayout>

@@ -1,0 +1,2 @@
+include ':app', ':areaviewlib-release'
+rootProject.name='EasyFarm'

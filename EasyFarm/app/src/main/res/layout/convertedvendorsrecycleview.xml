@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/labour_request"
+            android:background="@drawable/ed_bg"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lyt_code">
+                <TextView
+                    android:fontFamily="@font/hind_regular"
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Farmer Code"
+
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:fontFamily="@font/hind_regular"
+                    android:id="@+id/Code"
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/devider_black" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lyt_farmerName">
+                <TextView
+                    android:fontFamily="@font/hind_regular"
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Name"
+
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:fontFamily="@font/hind_regular"
+                    android:id="@+id/farmerName"
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/devider_black" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lyt_mobileNumber">
+                <TextView
+                    android:fontFamily="@font/hind_regular"
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Mobile Number"
+
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:fontFamily="@font/hind_regular"
+                    android:id="@+id/mobileNumber"
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/devider_black" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lyt_email">
+                <TextView
+                    android:fontFamily="@font/hind_regular"
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Email"
+
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:fontFamily="@font/hind_regular"
+                    android:id="@+id/email"
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/devider_black" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lyt_address">
+                <TextView
+                    android:fontFamily="@font/hind_regular"
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Address"
+
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:fontFamily="@font/hind_regular"
+                    android:id="@+id/address"
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/devider_black" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lyt_active">
+                <TextView
+                    android:fontFamily="@font/hind_regular"
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Active"
+
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:fontFamily="@font/hind_regular"
+                    android:id="@+id/active"
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

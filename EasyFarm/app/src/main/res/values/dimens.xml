@@ -1,0 +1,42 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="common_margin">16dp</dimen>
+    <dimen name="margin_top_layout">10dp</dimen>
+    <dimen name="mailLayMargin">15dp</dimen>
+    <dimen name="margin_top_layout_five">5dp</dimen>
+    <dimen name="layout_top_margin">10dp</dimen>
+    <dimen name="font_small">13dp</dimen>
+    <dimen name="font_regular">16dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="text_size_20">16sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="_9sdp">9sp</dimen>
+    <dimen name="_3sdp">3sp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="margin_8">5dp</dimen>
+    <dimen name="home_View_lyt_height">80dp</dimen>
+
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="thumbnail">40dp</dimen>
+    <dimen name="row_padding">10dp</dimen>
+    <dimen name="contact_name">15dp</dimen>
+    <dimen name="contact_number">12dp</dimen>
+    <dimen name="_14dp">14dp</dimen>
+    <dimen name="album_title_padding">5dp</dimen>
+    <dimen name="_150dp">130dp</dimen>
+    <dimen name="album_title">14dp</dimen>
+    <dimen name="hight_1000">500dp</dimen>
+    <dimen name="_450dp">500dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+</resources>
